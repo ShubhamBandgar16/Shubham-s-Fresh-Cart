@@ -1,0 +1,70 @@
+#sign button{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;  
+}
+
+#sign button a{
+    color: white;
+}
+
+#profile_content{
+    width: 30%;
+    text-align: center; 
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-left: 35%;
+    padding: 25px;
+}
+
+#profile_img img{
+    border-radius: 50%;
+    height: 150px;
+}
+
+#profile_content input[type=file]{
+    display: none;
+}
+
+#profile_content label{
+    display: block;
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    padding: 7px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 7px;
+}
+
+#profile_content input[type=text]{
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid gray;
+    border-radius: 5px ;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#aboutus:hover{
+    color: orange;
+}
+
+#about{
+    border: 2px solid black;
+    border-radius: 7px;
+    background-image: url("signback.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px;
+}   
+
+#about_content{
+    text-align: center;
+    font-size: 20px;
+    padding: 25px;
+    color: black;
+}
+
+
+

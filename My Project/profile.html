@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div id="head1" style="font-family: Arial, Helvetica, sans-serif;font-size: 23px; font-weight: bold;">
+            <i class="fa-solid fa-cart-shopping" style="color: #fda308;"></i>
+            Fresh Field Finds
+        </div>
+        <div id="head2">
+            <a href="home.html" id="home">Home</a>
+            <a href="products.html" id="products">Products</a>
+            <a href="aboutus.html" id="aboutus">About Us</a>
+        </div>
+        <div id="head3"><a href="profile.html" class="active">My Profile <div id="profile"><i class="fa-regular fa-user"></i></div></a>
+        </div>
+    </header><br>
+
+    <section>
+        <div id="container">
+            <div id="profile_content">
+                <br>
+                <br>
+                <div id="profile_img">
+                    <img id="profile-pic" src="default.jpg">
+                </div><br>
+                <label for="upload">Update image</label>
+                <input type="file" accept="image/jpeg, image/png, image/jpg" id="upload"><br><br>
+                <input type="text" placeholder="Name" id="dname" onchange="disable1()">
+                <input type="text" placeholder="Username" id="duname" onchange="disable2()">
+                <input type="text" placeholder="Email" id="demail" onchange="disable3()">
+                <input type="text" placeholder="Mobile Number" id="dmobile" onchange="disable4()">
+            </div>
+        </div>
+    </section><br>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are committed to providing fresh and high-quality groceries to our customers. Visit our store and
+                    experience the best in food products.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>123 Main Street, Cityville</p>
+                <p>Email: info@example.com</p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-media">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2023 Grocery Store. All rights reserved.</p>
+    </footer>
+    <script>
+        let profilepic = document.getElementById("profile-pic");
+        let inputfile = document.getElementById("upload");
+
+        inputfile.onchange = function(){
+            profilepic.src = URL.createObjectURL(inputfile.files[0]);
+        }
+
+        function disable1(){
+            let name = document.getElementById("dname");
+            name.disabled = true;
+        }
+
+        function disable2(){
+            let uname = document.getElementById("duname");
+            uname.disabled = true;
+        }
+
+        function disable3(){
+            let email = document.getElementById("demail");
+            email.disabled = true;
+        }
+
+        function disable4(){
+            let mobile = document.getElementById("dmobile");
+            mobile.disabled = true;
+        }
+    </script>
+</body>
+
+</html>

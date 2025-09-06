@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body id="signback" background="signback.avif" style="background-repeat: no-repeat;background-size: cover;">
+    <div id="sign" style="background-color: rgb(204, 204, 204);height: auto;top: 180px;">
+        <form action="php3.php" method="post">
+            <br>
+            <p id="p1">Sign in</p><br>
+            <p id="p2">Enter Email and Password to sign in</p>
+            <input class="insign" type="email" name="email" id="email" placeholder="Email"
+                style="margin-bottom: 14px" required><br>
+            <div id="signicon">
+                <scam id="passicon"><i class="fa-sharp fa-regular fa-eye" onclick="showpass()"></i></scam>
+                <input id="pass" class="insign" type="password" name="password" placeholder="Password"
+                    style="margin-bottom: 14px" required>
+            </div>
+            <br>
+            <input type="submit" id="signbutton" value="Sign in"><br><br>
+            <div style="padding-bottom: 20px;">
+                <text style="color: gray;font-size: 12px;">By continuing, you agree to our</text><a href="" id="signa2"
+                    style="font-size: 12px;text-decoration: none;"> Terms of Service.</a><br>
+                <text style="font-size: 12px;color: gray">Read your</text><a href="" id="signa2"
+                    style="font-size: 12px;text-decoration: none;"> Privacy Policy.</a>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

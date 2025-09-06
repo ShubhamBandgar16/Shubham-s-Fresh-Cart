@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <header id="header">
+        <div id="head1" style="font-family: Arial, Helvetica, sans-serif;font-size: 23px; font-weight: bold;">
+            <i class="fa-solid fa-cart-shopping" style="color: #fda308;"></i>
+            Fresh Field Finds
+        </div>
+        <div id="head2">
+            <a href="home.html" id="home">Home</a>
+            <a href="products.html" id="products" class="active">Products</a>
+            <input type="button" value="My Cart" onclick="mycart()" id="cart">
+            <a href="aboutus.html" id="aboutus">About Us</a>
+        </div>
+        <div id="head3"><a href="profile.html">My Profile <div id="profile"><i class="fa-regular fa-user"></i></div></a>
+        </div>
+    </header>
+
+    <div id="Content">
+        <div id="image">
+            <img id="image2" src="productimage.webp">
+        </div>
+    </div>
+    <br><br><br>
+    <p style="text-align: center;"><img id="imagepro" src="product.png"></p>
+    <br><br><br><br>
+    <section class="products1">
+        <span id="heading_V">Vegetables :-</span>
+        <div class="slider1">
+            <div id="slider1" class="slide">
+                <div id="row1">
+                    <div class="product2">
+                        <img src="carrots.jpg" alt="Product 1">
+                        <h3>Carrots</h3>
+                        <p>Root vegetable rich in vitamin A and beta-carotene.</p><br>
+                        <span class="price">Price: &#8377; <text>90</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="broccoli.jpg" alt="Product 2">
+                        <h3>Broccoli</h3>
+                        <p>Nutrient-packed green vegetable with a mild taste.</p><br>
+                        <span class="price">Price: &#8377; <text>200</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="cucumbers.jpg" alt="Product 3">
+                        <h3>Cucumbers</h3>
+                        <p>Refreshing and hydrating low-calorie vegetable.</p><br>
+                        <span class="price">Price: &#8377; <text>27</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="Tomatoes.avif" alt="Product 4">
+                        <h3>Tomatoes</h3>
+                        <p>Juicy and versatile vegetable with vibrant flavors.</p><br>
+                        <span class="price">Price: &#8377; <text>140</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="slider2" class="slide">
+                <div id="row2">
+                    <div class="product2">
+                        <img src="peppers.jpg" alt="Product 5">
+                        <h3>Peppers</h3>
+                        <p>Colorful and crunchy vegetable packed with vitamins.</p><br>
+                        <span class="price">Price: &#8377; <text>180</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="spinach.webp" alt="Product 6">
+                        <h3>Spinach</h3>
+                        <p>Nutrient-rich leafy green vegetable with a delicate taste.</p><br>
+                        <span class="price">Price: &#8377; <text>95</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="onions.jpg" alt="Product 7">
+                        <h3>Onions</h3>
+                        <p>Flavorful culinary vegetable perfect for adding depth to dishes.</p><br>
+                        <span class="price">Price: &#8377; <text>170</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="asparagus.jpg" alt="Product 8">
+                        <h3>Asparagus</h3>
+                        <p>Tender and nutrient-rich vegetable with a distinctive flavor.</p><br>
+                        <span class="price">Price: &#8377; <text>331</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="prev-btn">&lt;</button>
+        <button class="next-btn">&gt;</button>
+        <div class="slider2">
+            <div id="slider1" class="slide2">
+                <div id="row1">
+                    <div class="product2">
+                        <img src="eggplant.jpg" alt="Product 1">
+                        <h3>Eggplant</h3>
+                        <p>Versatile vegetable with a meaty texture and mild bitterness.</p><br>
+                        <span class="price">Price: &#8377; <text>65</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="zucchini.avif" alt="Product 2">
+                        <h3>Zucchini</h3>
+                        <p>Mild and versatile summer squash with tender flesh and edible skin.</p><br>
+                        <span class="price">Price: &#8377; <text>154</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="mushrooms.jpg" alt="Product 3">
+                        <h3>Mushrooms</h3>
+                        <p>Savory fungi available in various types and earthy flavors.</p><br>
+                        <span class="price">Price: &#8377; <text>150</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="cauliflower.jpg" alt="Product 4">
+                        <h3>Cauliflower</h3>
+                        <p>Mild and nutritious cruciferous vegetable with versatile florets.</p><br>
+                        <span class="price">Price: &#8377; <text>40</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="slider2" class="slide2">
+                <div id="row2">
+                    <div class="product2">
+                        <img src="cabbage.jpg" alt="Product 5">
+                        <h3>Cabbage</h3>
+                        <p>Leafy vegetable often used in salads and coleslaw.</p><br>
+                        <span class="price">Price: &#8377; <text>40</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="Sweet Potatoes.jpg" alt="Product 6">
+                        <h3>Sweet Potatoes</h3>
+                        <p>Nutrient-rich root vegetable with a sweet flavor.</p><br>
+                        <span class="price">Price: &#8377; <text>52</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="radishes.png" alt="Product 7">
+                        <h3>Radishes</h3>
+                        <p>Crunchy and peppery root vegetable with vibrant colors and crisp texture.</p><br>
+                        <span class="price">Price: &#8377; <text>26</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="celery.jpg" alt="Product 8">
+                        <h3>Celery</h3>
+                        <p>Crunchy and hydrating vegetable with a mild flavor.</p><br>
+                        <span class="price">Price: &#8377; <text>210</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="prev-btn2">&lt;</button>
+        <button class="next-btn2">&gt;</button>
+        <br><br>
+        <span id="heading_F">Fruits :-</span>
+        <div class="slider3">
+            <div id="slider1" class="slide3">
+                <div id="row1">
+                    <div class="product2">
+                        <img src="Apples.webp" alt="Product 1">
+                        <h3>Apples</h3>
+                        <p>Crunchy and juicy fruits with a variety of flavors and colors.</p><br>
+                        <span class="price">Price: &#8377; <text>150</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="bananas.jpg" alt="Product 2">
+                        <h3>Bananas</h3>
+                        <p>Creamy and potassium-rich fruits with a natural packaging.</p><br>
+                        <span class="price">Price: &#8377; <text>44</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="oranges.jpg" alt="Product 3">
+                        <h3>Oranges</h3>
+                        <p>Citrus fruits bursting with refreshing juice and vitamin C.</p><br>
+                        <span class="price">Price: &#8377; <text>22</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="grapes.jpg" alt="Product 4">
+                        <h3>Grapes</h3>
+                        <p>Small and sweet fruits available in various colors and varieties.</p><br>
+                        <span class="price">Price: &#8377; <text>175</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="slider2" class="slide3">
+                <div id="row2">
+                    <div class="product2">
+                        <img src="strawberries.jpg" alt="Product 5">
+                        <h3>Strawberries</h3>
+                        <p>Red and juicy berries known for their sweet and tangy flavor.</p><br>
+                        <span class="price">Price: &#8377; <text>200</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="pineapples.jpg" alt="Product 6">
+                        <h3>Pineapples</h3>
+                        <p>Tropical fruits with a sweet and tangy taste and prickly exterior.</p><br>
+                        <span class="price">Price: &#8377; <text>500</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="watermelons.jpg" alt="Product 7">
+                        <h3>Watermelons</h3>
+                        <p>Large and hydrating fruits with a refreshing and juicy flesh.</p><br>
+                        <span class="price">Price: &#8377; <text>30</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="mangoes.jpg" alt="Product 8">
+                        <h3>Mangoes</h3>
+                        <p>Tropical fruits with a sweet and juicy flesh and distinctive flavor.</p><br>
+                        <span class="price">Price: &#8377; <text>70</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="prev-btn3">&lt;</button>
+        <button class="next-btn3">&gt;</button>
+        <div class="slider4">
+            <div id="slider1" class="slide4">
+                <div id="row1">
+                    <div class="product2">
+                        <img src="blueberries.jpg" alt="Product 1">
+                        <h3>Blueberries</h3>
+                        <p>Small and antioxidant-rich berries with a sweet and tangy taste.</p><br>
+                        <span class="price">Price: &#8377; <text>325</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="raspberries.webp" alt="Product 2">
+                        <h3>Raspberries</h3>
+                        <p>Delicate and flavorful berries with a vibrant color and unique texture.</p><br>
+                        <span class="price">Price: &#8377; <text>950</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="avocado.jpg" alt="Product 3">
+                        <h3>Avocados</h3>
+                        <p>Creamy and nutrient-dense fruits with a buttery texture.</p><br>
+                        <span class="price">Price: &#8377; <text>212</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="peaches.jpg" alt="Product 4">
+                        <h3>Peaches</h3>
+                        <p>Soft and sweet fruits with fuzzy skin and juicy flesh.</p><br>
+                        <span class="price">Price: &#8377; <text>498</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="slider2" class="slide4">
+                <div id="row2">
+                    <div class="product2">
+                        <img src="kiwis.webp" alt="Product 5">
+                        <h3>Kiwis</h3>
+                        <p>Small and tangy fruits with a fuzzy brown exterior and bright green flesh.</p><br>
+                        <span class="price">Price: &#8377; <text>150</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="pears.webp" alt="Product 6">
+                        <h3>Pears</h3>
+                        <p>Juicy and sweet fruits with a smooth and firm texture.</p><br>
+                        <span class="price">Price: &#8377; <text>305</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="cherries.webp" alt="Product 7">
+                        <h3>Cherries</h3>
+                        <p>Small and succulent fruits with a sweet and tart flavor.</p><br>
+                        <span class="price">Price: &#8377; <text>165</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="plums.webp" alt="Product 8">
+                        <h3>Plums</h3>
+                        <p>Juicy and sweet fruits with smooth skin and a variety of colors.</p><br>
+                        <span class="price">Price: &#8377; <text>208</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="prev-btn4">&lt;</button>
+        <button class="next-btn4">&gt;</button>
+        <br><br>
+        <span id="heading_BB">Bakery and Bread :-</span>
+        <div class="slider5">
+            <div id="slider1" class="slide5">
+                <div id="row1">
+                    <div class="product2">
+                        <img src="croissants.avif" alt="Product 1">
+                        <h3>Croissants</h3>
+                        <p>Buttery and flaky pastries with a delicate and airy texture.</p><br>
+                        <span class="price">Price: &#8377; <text>20</text> per pac</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="bagels.jpg" alt="Product 2">
+                        <h3>Bagels</h3>
+                        <p>Dense and chewy bread products with a distinctive ring shape.</p><br>
+                        <span class="price">Price: &#8377; <text>150</text> per pac</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="muffins.jpg" alt="Product 3">
+                        <h3>Muffins</h3>
+                        <p>Soft and moist individual-sized cakes with various flavors and toppings.</p><br>
+                        <span class="price">Price: &#8377; <text>70</text> per pac</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="doughnuts.jpg" alt="Product 4">
+                        <h3>Doughnuts</h3>
+                        <p>Fried pastries with a sweet glaze or filling, often topped with sprinkles.</p><br>
+                        <span class="price">Price: &#8377; <text>40</text> per ps</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="slider2" class="slide5">
+                <div id="row2">
+                    <div class="product2">
+                        <img src="cakes.jpg" alt="Product 5">
+                        <h3>Cakes</h3>
+                        <p>Delicious and decorative desserts with various flavors, fillings, and frostings.</p><br>
+                        <span class="price">Price: &#8377; <text>1100</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="pastries.avif" alt="Product 6">
+                        <h3>Pastries</h3>
+                        <p>Assorted sweet or savory baked goods with flaky or crumbly crusts.</p><br>
+                        <span class="price">Price: &#8377; <text>30</text> per pac</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="cookies.jpg" alt="Product 7">
+                        <h3>Cookies</h3>
+                        <p>Small and sweet baked treats with a variety of flavors and textures.</p><br>
+                        <span class="price">Price: &#8377; <text>399</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="breads.jpg" alt="Product 8">
+                        <h3>Breads</h3>
+                        <p>Various types of bread with different textures, flavors, and shapes.</p><br>
+                        <span class="price">Price: &#8377; <text>50</text> per pac</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="prev-btn5">&lt;</button>
+        <button class="next-btn5">&gt;</button>
+        <div class="slider6">
+            <div id="slider1" class="slide6">
+                <div id="row1">
+                    <div class="product2">
+                        <img src="pretzels.jpg" alt="Product 1">
+                        <h3>Pretzels</h3>
+                        <p>Salty and twisted bread snacks with a crispy crust.</p><br>
+                        <span class="price">Price: &#8377; <text>85</text> 40g</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="biscuits.webp" alt="Product 2">
+                        <h3>Biscuits</h3>
+                        <p>Fluffy and buttery baked goods often served as a side dish.</p><br>
+                        <span class="price">Price: &#8377; <text>45</text> per pac</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="baguettes.jpg" alt="Product 3">
+                        <h3>Baguettes</h3>
+                        <p>Long and slender French bread with a crisp crust and soft interior.</p><br>
+                        <span class="price">Price: &#8377; <text>109</text> 300g</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="donuts.webp" alt="Product 4">
+                        <h3>Donuts</h3>
+                        <p>Fried pastries with a sweet glaze or filling, often topped with sprinkles.</p><br>
+                        <span class="price">Price: &#8377; <text>40</text> per ps</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="slider2" class="slide6">
+                <div id="row2">
+                    <div class="product2">
+                        <img src="Sourdough Bread.gif" alt="Product 5">
+                        <h3>Sourdough Bread</h3>
+                        <p>Artisan bread made with naturally fermented dough for a tangy flavor.</p><br>
+                        <span class="price">Price: &#8377; <text>89</text> per ps</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="Pita Bread.jpg" alt="Product 6">
+                        <h3>Pita Bread</h3>
+                        <p>Soft and round bread perfect for filling with savory ingredients.</p><br>
+                        <span class="price">Price: &#8377; <text>85</text> per pac</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="brioche.webp" alt="Product 7">
+                        <h3>Brioche</h3>
+                        <p>Rich and buttery bread often used in pastries and French toast.</p><br>
+                        <span class="price">Price: &#8377; <text>102</text> per pac</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="Cinnamon Rolls.jpg" alt="Product 8">
+                        <h3>Cinnamon Rolls</h3>
+                        <p>Sweet and gooey rolls filled with cinnamon and topped with icing.</p><br>
+                        <span class="price">Price: &#8377; <text>85</text> per ps</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="prev-btn6">&lt;</button>
+        <button class="next-btn6">&gt;</button>
+        <br><br>
+        <span id="heading_MS">Meat and Seafood :-</span>
+        <div class="slider7">
+            <div id="slider1" class="slide7">
+                <div id="row1">
+                    <div class="product2">
+                        <img src="beef.webp" alt="Product 1">
+                        <h3>Beef</h3>
+                        <p>Tender and flavorful meat from cattle, perfect for various dishes.</p><br>
+                        <span class="price">Price: &#8377; <text>200</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="chicken.webp" alt="Product 2">
+                        <h3>Chicken</h3>
+                        <p>Lean and versatile poultry meat, great for a wide range of recipes.</p><br>
+                        <span class="price">Price: &#8377; <text>180</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="pork.jpg" alt="Product 3">
+                        <h3>Pork</h3>
+                        <p>Juicy and rich meat from pigs, used in numerous culinary preparations.</p><br>
+                        <span class="price">Price: &#8377; <text>350</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="Salmon Roe.jpg" alt="Product 4">
+                        <h3>Salmon Roe</h3>
+                        <p>Delicate and flavorful fish eggs, often used as a topping or garnish.</p><br>
+                        <span class="price">Price: &#8377; <text>600</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="slider2" class="slide7">
+                <div id="row2">
+                    <div class="product2">
+                        <img src="salmon.jpg" alt="Product 5">
+                        <h3>Salmon</h3>
+                        <p>Delicious and nutritious fish with a rich flavor and delicate texture.</p><br>
+                        <span class="price">Price: &#8377; <text>3730</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="shrimp.jpg" alt="Product 6">
+                        <h3>Shrimp</h3>
+                        <p>Tasty and versatile crustaceans, commonly used in various seafood dishes.</p><br>
+                        <span class="price">Price: &#8377; <text>240</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="Oysters.jpg" alt="Product 7">
+                        <h3>Oysters</h3>
+                        <p>Delectable shellfish with a briny flavor, enjoyed raw or cooked.</p><br>
+                        <span class="price">Price: &#8377; <text>1615</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="Squid.avif" alt="Product 8">
+                        <h3>Squid</h3>
+                        <p>Tender and versatile seafood, commonly used in various Asian cuisines.</p><br>
+                        <span class="price">Price: &#8377; <text>180</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="prev-btn7">&lt;</button>
+        <button class="next-btn7">&gt;</button>
+        <div class="slider8">
+            <div id="slider1" class="slide8">
+                <div id="row1">
+                    <div class="product2">
+                        <img src="Beef Steak.jpg" alt="Product 1">
+                        <h3>Beef Steak</h3>
+                        <p>Tender and flavorful cuts of beef, ideal for grilling or pan-searing.</p><br>
+                        <span class="price">Price: &#8377; <text>200</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="Chicken Breast.jpg" alt="Product 2">
+                        <h3>Chicken Breast</h3>
+                        <p>Lean and versatile poultry meat, perfect for various healthy recipes.</p><br>
+                        <span class="price">Price: &#8377; <text>499</text> 6pc</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="Pork Chops.jpg" alt="Product 3">
+                        <h3>Pork Chops</h3>
+                        <p>Juicy and flavorful cuts of pork, great for grilling or roasting.</p><br>
+                        <span class="price">Price: &#8377; <text>1500</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="Crab.jpg" alt="Product 4">
+                        <h3>Crab</h3>
+                        <p>Delicious crustaceans with delicate and flavorful meat.</p><br>
+                        <span class="price">Price: &#8377; <text>150</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="slider2" class="slide8">
+                <div id="row2">
+                    <div class="product2">
+                        <img src="Lobster.jpg" alt="Product 5">
+                        <h3>Lobster</h3>
+                        <p>Exquisite shellfish with tender and succulent meat, often enjoyed on special occasions.</p>
+                        <br>
+                        <span class="price">Price: &#8377; <text>662</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="Scallops.webp" alt="Product 6">
+                        <h3>Scallops</h3>
+                        <p>Tender and sweet mollusks with a delicate flavor, perfect for searing or grilling.</p><br>
+                        <span class="price">Price: &#8377; <text>1600</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="Octopus.avif" alt="Product 7">
+                        <h3>Octopus</h3>
+                        <p>Tender and flavorful cephalopod, often enjoyed grilled or in salads.</p><br>
+                        <span class="price">Price: &#8377; <text>240</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product2">
+                        <img src="Mussels.webp" alt="Product 8">
+                        <h3>Mussels</h3>
+                        <p>Flavorful shellfish with tender and plump meat, often used in soups.</p><br>
+                        <span class="price">Price: &#8377; <text>490</text> per kg</span>
+                        <span class="qnt">Qnt: <input type="number" value="1"></span>
+                        <br>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="prev-btn8">&lt;</button>
+        <button class="next-btn8">&gt;</button>
+    </section><br><br>
+
+    <div id="mycart">
+        <br>
+        <a href="#" class="cart-link">Cart (0)</a>
+        <div class="cart">
+            <h2>Items :-</h2>
+            <ul class="cart-items"></ul>
+            <p class="cart-total">Total: &#8377;0</p>
+            <br>
+            <button class="add-to-cart">Buy Items</button>
+        </div>
+    </div>
+
+    <br>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are committed to providing fresh and high-quality groceries to our customers. Visit our store and
+                    experience the best in food products.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>123 Main Street, Cityville</p>
+                <p>Email: info@example.com</p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-media">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2023 Grocery Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>
